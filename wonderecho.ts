@@ -26,8 +26,60 @@ namespace wonderecho {
         LEAN_LEFT,
         //% block="Lean right"
         LEAN_RIGHT,
-        //% block="Copy that"
-        STOP
+        //% block="Stop"
+        STOP,
+        //% block="Attention"
+        ATTENTION,
+        //% block="Get down"
+        GET_DOWN,
+        //% block="Sit down"
+        SIT_DOWN,
+        //% block="Speed up"
+        SPEED_UP,
+        //% block="Slow down"
+        SLOW_DOWN,
+        //% block="Execute action one"
+        EXECUTE_ACTION_ONE,
+        //% block="Execute action two"
+        EXECUTE_ACTION_TWO,
+        //% block="Execute action three"
+        EXECUTE_ACTION_THREE,
+        //% block="Turn on the light"
+        TURN_ON_THE_LIGHT,
+        //% block="Turn off the light"
+        TURN_OFF_THE_LIGHT,
+        //% block="Open the door"
+        OPEN_THE_DOOR,
+        //% block="Close the door"
+        CLOSE_THE_DOOR,
+        //% block="Turn on the water pump"
+        TURN_ON_THE_WATER_PUMP,
+        //% block="Turn off the water pump"
+        TURN_OFF_THE_WATER_PUMP,
+        //% block="Unfold the airing rack"
+        UNFOLD_THE_AIRING_RACK,
+        //% block="Fold the aring rack"
+        FOLD_THE_ARING_RACK,
+        //% block="Hello"
+        HELLO,
+        //% block="Introduce yourself"
+        INTRODUCE_YOURSELF,
+        //% block="Show a skill"
+        SHOW_A_SKIII,
+        //% block="March"
+        MARCH,
+        //% block="Shake head"
+        SHAKE_HEAD,
+        //% block="Dive forward"
+        DIVE_FORWARD,
+        //% block="Dive backward"
+        DIVE_BACKWARD,
+        //% block="Combat mode"
+        COMBAT_MODE,
+        //% block="Squat down"
+        SQUAT_DOWN,
+        //% block="Shake it off"
+        SHAKE_IT_OFF
     }
 
     export enum WORD_SPEAK_PLAY {
@@ -82,6 +134,7 @@ namespace wonderecho {
         LEAN_RIGHT,
         //% block="Copy that"
         COPY_THAT,
+        //% block="Turn on the light"
         TURN_ON_THE_LIGHT = 0x12,
         //% block="Turn off the light"
         TURN_OFF_THE_LIGHT,
@@ -130,7 +183,7 @@ namespace wonderecho {
     //% weight=100 blockId=readASRResult block="Read WonderEcho recognize result is %value"
     export function readASRResult(value: WORD_RESULT): Boolean {
         let result = asr_i2Cread()
-        return (result = value)
+        return (result == value)
     }
 
     /**
