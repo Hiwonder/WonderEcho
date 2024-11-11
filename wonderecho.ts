@@ -1,7 +1,7 @@
 /*
  wonderecho package
 */
-//% weight=10 icon="\uf013" color=#ff7f00
+//% weight=10 icon="\uf58f" color=#ff7f00
 namespace wonderecho {
     let ASR_I2C_ADDR = 0x34
     let ASR_RESULT_ADDR = 0x64
