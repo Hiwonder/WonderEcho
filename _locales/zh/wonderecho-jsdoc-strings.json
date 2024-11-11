@@ -1,0 +1,8 @@
+{
+	"wonderecho.readASRResult": "获取WonderEcho识别结果",
+	"wonderecho.readASRResultID": "获取WonderEcho识别结果ID",
+	"wonderecho.playASRCmdWorld": "播放WonderEcho命令类型语音",
+	"wonderecho.playASRSpeakWorld": "播放WonderEcho播报类型语音",
+	"wonderecho.playASRWorldID": "播放WonderEcho语音，可选类型"
+}
+

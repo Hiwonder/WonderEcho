@@ -1,0 +1,19 @@
+{
+    "name": "wonderecho",
+    "version": "0.0.1",
+    "description": "Extension for Hiwonder WonderEcho",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "wonderecho.ts",
+        "_locales/zh/wonderecho-strings.json",
+        "_locales/zh/wonderecho-jsdoc-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
