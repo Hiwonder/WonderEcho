@@ -189,7 +189,7 @@ namespace wonderecho {
     /**
     * Read WonderEcho recognize result world ID
     */
-    //% weight=98 blockGap=20 blockId=readASRResultID block="Read WonderEcho recognize result world ID"
+    //% weight=98 blockGap=50 blockId=readASRResultID block="Read WonderEcho recognize result world ID"
     export function readASRResultID() {
         return asr_i2Cread()
     }
