@@ -38,11 +38,11 @@ namespace wonderecho {
         SPEED_UP,
         //% block="Slow down"
         SLOW_DOWN,
-        //% block="Execute action one"
+        //% block="Raise"
         EXECUTE_ACTION_ONE,
-        //% block="Execute action two"
+        //% block="Lower
         EXECUTE_ACTION_TWO,
-        //% block="Execute action three"
+        //% block="Barks once"
         EXECUTE_ACTION_THREE,
         //% block="Turn on the light"
         TURN_ON_THE_LIGHT,
@@ -189,7 +189,7 @@ namespace wonderecho {
     /**
     * Read WonderEcho recognize result world ID
     */
-    //% weight=98 blockId=readASRResultID block="Read WonderEcho recognize result world ID"
+    //% weight=98 blockGap=20 blockId=readASRResultID block="Read WonderEcho recognize result world ID"
     export function readASRResultID() {
         return asr_i2Cread()
     }
