@@ -158,9 +158,9 @@ namespace wonderecho {
 
     export enum VOICE_TYPE {
         //% block="Speak"
-        SPEAK_TYPE = 0x00,
+        SPEAK_TYPE = 0xff,
         //% block="Command"
-        CMD_TYPE = 0xff
+        CMD_TYPE = 0x00
     }
 
     function asr_i2Cwrite(cmd: number, id: number): number {
